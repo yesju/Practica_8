@@ -3,19 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 using SQLite;
-
 
 namespace Practica_8
 {
-    public partial class MainPage : ContentPage
+    public interface ISQLite
     {
-        public MainPage()
-        {
-            InitializeComponent();
-            
-        }
-
+        string GetLocalFilePath(string filename);
     }
 }

@@ -13,7 +13,7 @@ namespace Practica_8
         {
             InitializeComponent();
 
-            MainPage = new Practica_8.MainPage();
+            MainPage = new NavigationPage(new DataPage());
         }
 
         protected override void OnStart()
